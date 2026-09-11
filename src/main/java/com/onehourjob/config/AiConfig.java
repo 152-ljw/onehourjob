@@ -15,7 +15,7 @@ public class AiConfig {
     private String modelName;
 
     @Bean
-    public QwenEmbeddingModel qwenEmbeddingModel() { // 通义千问 Embedding 模型
+    public QwenEmbeddingModel qwenEmbeddingModel() {
         return QwenEmbeddingModel.builder()
                 .apiKey(apiKey)
                 .modelName(modelName)
